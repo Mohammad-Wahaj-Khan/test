@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charter Services | Acton Jets</title>
+    <link rel="shortcut icon" href="./src/LOGO of Acton Jets PNG.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+      <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .hero-content {
+            background: url('./src/imAGE/Pics\ for\ actonjets.com\ 18.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 200px 0;
+            opacity: 0.8;
+            height: 100vh;
+        }
+
+        .hero {
+            background: #222222;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.6em;
+            padding-bottom: 5%;
+            padding-top: 1%;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: block;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+                7px 7px 20px 0px rgba(0, 0, 0, .1),
+                4px 4px 5px 0px rgba(0, 0, 0, .1);
+            outline: none;
+        }
+
+
+        /* 3 */
+        .btn-3 {
+            background: rgb(0, 172, 238);
+            background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            padding: 0;
+            border: none;
+
+        }
+
+        .btn-3 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn-3:before,
+        .btn-3:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            background: rgba(2, 126, 251, 1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-3:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn-3:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-3:hover {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .btn-3:hover:before {
+            height: 100%;
+        }
+
+        .btn-3:hover:after {
+            width: 100%;
+        }
+
+        .btn-3 span:hover {
+            color: rgba(2, 126, 251, 1);
+        }
+
+        .btn-3 span:before,
+        .btn-3 span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background: rgba(2, 126, 251, 1);
+            transition: all 0.3s ease;
+        }
+
+        .btn-3 span:before {
+            width: 2px;
+            height: 0%;
+        }
+
+        .btn-3 span:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn-3 span:hover:before {
+            height: 100%;
+        }
+
+        .btn-3 span:hover:after {
+            width: 100%;
+        }
+
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(75, 75, 250, 0.3);
+            border-radius: 3px;
+        }
+
+        .center h1 {
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+
+        }
+
+        .aboutCont {
+            display: flex;
+            justify-content: space-around;
+            margin: 0px auto;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 3em auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .lastpoint {
+            margin: 2px 100px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .plane-img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 4em auto;
+            margin-right: 80px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .plane-img:hover {
+            transform: scale(1.1);
+        }
+
+        .plane-img1 {
+            width: 100%;
+            max-width: 400px;
+            height: 35vh;
+            display: block;
+            margin: 5em auto;
+            margin-left: 100px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .plane-img1:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 400px) {
+            .plane-img {
+                max-width: 100%;
+            }
+
+            .aboutCont {
+                display: block;
+            }
+
+            .plane-img1 {
+                max-width: 100%;
+                margin-left: 0px;
+            }
+
+            .lastpoint {
+                margin: 2px 10px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .plane-img {
+                max-width: 100%;
+            }
+
+            .aboutCont {
+                display: block;
+            }
+
+            .plane-img1 {
+                max-width: 100%;
+                margin-left: 0px;
+            }
+
+            .lastpoint {
+                margin: 2px 10px;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+
+        /* new */
+        @keyframes airplane {
+            0% {
+                opacity: 0;
+                transform: translate(-200px, 100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes topRightCloud {
+            0% {
+                opacity: 0;
+                transform: translate(10px, -10px) scale(0.5);
+            }
+
+            100% {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes topLeftCloud {
+            from {
+                opacity: 0;
+                transform: translate(-10px, -10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes bottomRightCloud {
+            from {
+                opacity: 0;
+                transform: translate(-100px, -10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes bottomLeftCloud {
+            from {
+                opacity: 0;
+                transform: translate(0px, 100px);
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes checkmark {
+            0% {
+                opacity: 0;
+                transform: translate(144px, 200px);
+            }
+
+            80% {
+                opacity: 0.8;
+                transform: translate(144px, 140px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(144px, 147px);
+            }
+        }
+
+        #airplane {
+            animation: 1s cubic-bezier(0.5, 0, 0, 1) backwards airplane;
+        }
+
+        #cloud-top-right {
+            animation: .7s ease-out .2s backwards topRightCloud;
+        }
+
+        #cloud-top-left {
+            animation: .7s ease-out .5s backwards topLeftCloud;
+        }
+
+        #cloud-bottom-left {
+            animation: .7s ease-out .2s backwards bottomLeftCloud;
+        }
+
+        #cloud-bottom-right {
+            animation: .7s ease-out .3s backwards bottomRightCloud;
+        }
+
+        #checkmark {
+            animation: .3s ease-out .7s backwards checkmark;
+        }
+
+        /* new */
+
+        /* animation */
+        /* ----------------------------------------------
+ * Generated by Animista on 2023-11-28 10:23:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+        /**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+        @-webkit-keyframes slide-in-bottom {
+            0% {
+                -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in-bottom {
+            0% {
+                -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in-bottom {
+            -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        /* animation */
+
+        /* ----------------------------------------------
+ * Generated by Animista on 2023-11-28 10:32:2
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+        /**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+        @-webkit-keyframes scale-up-center {
+            0% {
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes scale-up-center {
+            0% {
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        .scale-up-center {
+            -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        .plane-img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 4em auto;
+            margin-right: 80px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .plane-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* this page */
+        /* this page */
+      </style>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="http://actonjets.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/src/LOGO of Acton Jets PNG.png" class="h-8" alt="Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Acton Jets</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3  bg-blue-700 rounded text-gray-900 md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-200" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="Page01_About Us_Acton_Jets.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <a href="./Page02_Aircrafts Sale _ Lease.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aircrafts Sale</a>
+              </li>
+              <li>
+                <a href="./Page03_Charter_Services.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Charter Services</a>
+              </li>
+              <li>
+                <a href="./Page04_Aircraft_Management.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aircraft Management</a>
+              </li>
+              <li>
+                <a href="./Page05_Aviation_Insurance.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aviation Insurance</a>
+              </li>
+              <li>
+                <a href="./Page06_Contact_Us.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+          <h1 class="text-center text-white font-extrabold">Charter Flights </h1>
+          <p class="text-center text-4xl text-white font-semibold">Whether you need a business jet for a work trip or a private jet for leisure travel, a private jet charter <br> is the most convenient and relaxing way to fly.</p>
+
+          <div class="flex frame items-center justify-center">
+            <a href="./Page06_Contact_Us.html"><button class="custom-btn btn-3"><span >Contact Us</span></button></a>
+          </div>
+      </div>
+  </section>
+
+  <section class="bg-white dark:bg-gray-900 p-8">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 border-2">
+          <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our services for
+                  business
+                  aircraft also apply to commercial aircraft.</h2>
+              <p class="mb-4 font-light">Whether you need a business jet for a work trip or a private jet for leisure
+                  travel, a private jet charter is the most convenient and relaxing way to fly. Our team of charter
+                  experts have access to thousands of aircraft all over the world and will source the perfect private
+                  plane that matches your requirements. They will ensure that every aspect of your charter flight is
+                  taken care of, helping you reach your destination anywhere in the utmost comfort and style.</p>
+          </div>
+      </div>
+
+
+      <!-- values -->
+
+      <section class="p-8 bg-white dark:bg-gray-900">
+
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-4 lg:py-16 lg:px-6">
+              <h2 class="py-8 mt-10 text-center text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Why
+                  Fly Private?</h2>
+
+              <ol class="items-center col-span-3 sm:flex">
+                  <li class="relative mb-6 sm:mb-0">
+                      <div class="flex items-center">
+                          <div
+                              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                          </div>
+                          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                      </div>
+                      <div class="mt-3 sm:pe-8">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Choice of Aircraft</h3>
+                          <p class="text-base font-normal text-gray-500 dark:text-gray-400 py-2">Choose from a range
+                              of private jets to find the perfect aircraft for your requirements.</p>
+                      </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                      <div class="flex items-center">
+                          <div
+                              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                          </div>
+                          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                      </div>
+                      <div class="mt-3 sm:pe-8">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Convenience</h3>
+                          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Fly at a time that suits
+                              you rather than arranging your timetable around scheduled commercial flights.</p>
+                      </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                      <div class="flex items-center">
+                          <div
+                              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                          </div>
+                          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                      </div>
+                      <div class="mt-3 sm:pe-8">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Skip the queues</h3>
+                          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Access to private
+                              terminals and lounges means you don’t have to waste time standing in long queues.</p>
+                      </div>
+                  </li>
+              </ol>
+          </div>
+      </section>
+      <!-- values -->
+
+      <!-- values -->
+
+      <section class="bg-white dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-4 lg:py-16 lg:px-6">
+              <ol class="items-center col-span-3 sm:flex">
+                  <li class="relative mb-6 sm:mb-0">
+                      <div class="flex items-center">
+                          <div
+                              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                          </div>
+                          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                      </div>
+                      <div class="mt-3 sm:pe-8">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Privacy</h3>
+                          <p class="text-base font-normal text-gray-500 dark:text-gray-400">A charter jet allows you
+                              to work or relax in your own personal space.</p>
+                      </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                      <div class="flex items-center">
+                          <div
+                              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                          </div>
+                          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                      </div>
+                      <div class="mt-3 sm:pe-8">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Unrivalled comfort</h3>
+                          <p class="text-base font-normal text-gray-500 dark:text-gray-400">With extra space, large
+                              seats, divans and other luxuries, private aircraft provide an elevated level of comfort.
+                          </p>
+                      </div>
+                  </li>
+                  <li class="relative mb-6 sm:mb-0">
+                      <div class="flex items-center">
+                          <div
+                              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                  <path
+                                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                              </svg>
+                          </div>
+                          <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                      </div>
+                      <div class="mt-3 sm:pe-8">
+                          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Access to airports</h3>
+                          <p class="text-base font-normal text-gray-500 dark:text-gray-400">Arrange to land closer to
+                              your destination at an airport regular commercial aircraft can’t access.</p>
+                      </div>
+                  </li>
+              </ol>
+          </div>
+      </section>
+      <!-- values -->
+
+
+      <section class="bg-white dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Empty Legs
+                  </h2>
+                  <p class="mb-4">Often time, Acton Jets has a one-way charter, in which case the aircraft is empty
+                      when it repositions back to its base, or on to another global location. These are known as
+                      'Empty Legs’ and are available at savings of up to 75% of the cost of a regular charter flight.
+                  </p>
+              </div>
+              <img class="h-80 max-w-lg rounded-lg marketing-ui content office-long-2.png scale-up-center plane-img"
+                  src="./src/plane5.png" alt="Aircraft for sale and lease" >
+          </div>
+      </section>
+
+      <section class="bg-white dark:bg-gray-900">
+          <h2 class="mb-4 text-center p-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">List of
+              private jets available in our network for your charter flights:</h2>
+  <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class=" mt-8">
+                  <img class="w-full rounded-lg scale-up-center plane-img" src="/src/imAGE/Pics for actonjets.com 12.jpg"
+                      alt="office content 1">
+                  <img class="w-full rounded-lg scale-up-center plane-img" src="src/charterimg/charterimg3.jpg"
+                      alt="office content 1">
+              </div>
+              <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">1. Bombardier Learjet 75 Liberty
+                  </h3>
+                  <p class="mb-4">The Bombardier Learjet 75 Liberty is a fast and efficient business jet, known for
+                      its excellent performance and versatility. With a range of 4,269 kilometers, it can fly non-stop
+                      from New York to Los Angeles or from London to Moscow
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">2. Cessna Citation Longitude</h3>
+                  <p class="mb-4">The Cessna Citation Longitude is a versatile and reliable business jet, known for
+                      its excellent range and performance. With a range of 6,482 kilometers, it can fly non-stop from
+                      New York to Los Angeles or from London to Moscow
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">3. Embraer Legacy 650E
+                  </h3>
+                  <p class="mb-4">The Embraer Legacy 650E is a versatile and comfortable business jet, known for its
+                      impressive range and performance. With a range of 7,223 kilometers, it can fly non-stop from New
+                      York to London or from Los Angeles to Honolulu. The Legacy 650E features a spacious cabin that
+                      can accommodate up to 14 passengers, with customizable layouts that include private bedrooms,
+                      lounges, and conference rooms.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">4. Bombardier Challenger 605
+                  </h3>
+                  <p class="mb-4">The Bombardier Challenger 605 is a popular business jet, known for its excellent
+                      range, performance and reliability. With a range of 7,408 kilometers, it can fly non-stop from
+                      New York to Moscow or from Los Angeles to Tokyo. The Challenger 605 features a spacious and
+                      comfortable cabin that can accommodate up to 12 passengers, with advanced technology and
+                      entertainment systems, as well as a fully-equipped galley and lavatory.
+                  </p>
+
+              </div>
+          </div>
+      </section>
+
+
+      <section class="bg-white dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">5. Bombardier Challenger 650
+                  </h3>
+                  <p class="mb-4">The Bombardier Challenger 650 is a versatile and reliable business jet, known for
+                      its excellent performance and comfort. With a range of 7,408 kilometers, it can fly non-stop
+                      from New York to Moscow or from Los Angeles to Tokyo. The Challenger 650 features a spacious and
+                      customizable cabin that can accommodate up to 12 passengers, with comfortable seating and
+                      advanced technology and entertainment systems. The aircraft also has a large galley for
+                      in-flight catering and a fully-equipped lavatory.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">6. Gulfstream G450
+                  </h3>
+                  <p class="mb-4">The Gulfstream G450 is a mid-sized business jet known for its impressive range and
+                      reliability. With a range of 7,038 kilometers, it can fly non-stop from New York to London or
+                      from Los Angeles to Honolulu. The G450 features a comfortable cabin that can accommodate up to
+                      16 passengers, with customizable layouts that can include private bedrooms, lounges, and
+                      conference rooms. The aircraft is equipped with advanced technology and entertainment systems,
+                      as well as a large galley for in-flight catering.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">7. Gulfstream G500
+                  </h3>
+                  <p class="mb-4">The Gulfstream G500 is a high-performance business jet designed to provide a
+                      comfortable and luxurious experience for passengers. It features advanced technology and safety
+                      features, as well as a customizable cabin that can accommodate up to 19 passengers. With a range
+                      of 6,630 kilometers, the G500 can fly non-stop from New York to London or from Dubai to Beijing,
+                      making it a popular choice for both short and long-haul flights.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">8. Gulfstream G550
+                  </h3>
+                  <p class="mb-4">The G550 is a jet focused on reliability and uncompromising performance. It has an
+                      impressive intercontinental range of almost 10,850 kilometres and a high passenger capacity.
+                      Indeed, it has a spacious and luxurious cabin that can comfortably carry 14 to 18 passengers
+                      over long distances.
+                  </p>
+              </div>
+              <div class="mt-8">
+                  <img class="my-6 p-12 w-full rounded-lg scale-up-center plane-img"
+                      src="src/charterimg/charterimg5.jpg" alt="office content 1">
+                  <img class="w-full rounded-lg scale-up-center plane-img" src="./src/imAGE/Pics for actonjets.com 15.jpg"
+                      alt="office content 1">
+              </div>
+
+          </div>
+      </section>
+
+      <section class="bg-white dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class=" mt-8 ">
+                  <img class="w-full  rounded-lg scale-up-center plane-img" src="./src/imAGE/Pics for actonjets.com 17.jpg"
+                      alt="office content 1">
+                  <img class="w-full rounded-lg scale-up-center plane-img" src="src/imAGE/Pics for actonjets.com 21.jpg"
+                      alt="office content 1">
+              </div>
+              <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">9. Gulfstream G650ER
+                  </h3>
+                  <p class="mb-4">The Gulfstream G650 ER is one of the most prestigious private jets. It is an
+                      aircraft with many advantages. It is fast, versatile and very reliable. It has one of the
+                      longest ranges on the market at approximately 13,987 kilometres. Its cabin is luxurious and
+                      perfectly adapted for long flights from 12 to 16 hours.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">10. Dassault Falcon 7X
+                  </h3>
+                  <p class="mb-4">The Falcon 7X can travel 11,000 kilometres. It is equipped with three Pratt &
+                      Whitney Canada 307A engines, each with 6400 lb of thrust. It is also the first business jet in
+                      the world to be equipped with fly-by-wire controls. It is one of the most coveted private jets
+                      because it allows for rapid travel to remote destinations.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">11. Dassault Falcon 8X
+                  </h3>
+                  <p class="mb-4">The Dassault Falcon 8X is a high-performance private jet that can travel up to
+                      11,945 kilometers on a single tank of fuel. It is equipped with three Pratt & Whitney Canada
+                      PW307D engines, each with 6,722 pounds of thrust. Like its predecessor, the Falcon 7X, the 8X
+                      features fly-by-wire controls, making it one of the most advanced business jets in the world.
+                      The Falcon 8X is popular among discerning travelers for its ability to swiftly transport
+                      passengers to remote destinations, making it an excellent choice for those seeking both speed
+                      and comfort.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">12. Airbus ACJ319 NEO
+                  </h3>
+                  <p class="mb-4">The Airbus ACJ319neo is a modern and advanced private jet that offers a maximum
+                      range of over 12,500 kilometers, allowing it to fly non-stop for up to 15 hours. It can easily
+                      travel from London to New York or Dubai to Tokyo without the need to refuel. The ACJ319neo
+                      features a spacious cabin that can accommodate up to 19 passengers, with customizable layouts
+                      that include private bedrooms, lounges, and conference rooms. The aircraft is also equipped with
+                      state-of-the-art technology and entertainment systems to ensure a comfortable and enjoyable
+                      flight experience.
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <section class="bg-white dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">13. Bombardier Global 7000
+                  </h3>
+                  <p class="mb-4">The Bombardier Global 7000 is a high-performance private jet with a range of over
+                      14,260 kilometers, allowing it to fly non-stop for more than 17 hours. It holds several speed
+                      records in its class and can easily travel from New York to Hong Kong or Sydney to Los Angeles.
+                      With a spacious cabin that accommodates up to 19 passengers, the Global 7000 is a popular choice
+                      for long-haul flights.
+                  </p>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">14. Bombardier Global 7500
+                  </h3>
+                  <p class="mb-4">The Bombardier Global aircraft is the business jet with the longest range. It can
+                      travel up to 14,300 kilometres. In addition, it is a very luxurious aircraft with four living
+                      areas as well as a galley and a rest area for the crew.
+                  </p>
+
+              </div>
+              <div class=" mt-8">
+                  <img class="w-full rounded-lg scale-up-center plane-img" src="src/insurance2.png"
+                      alt="office content 1">
+              </div>
+
+          </div>
+      </section>
+
+
+      <section class="bg-white dark:bg-gray-900">
+          <div
+              class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-3 sm:py-16 lg:px-6">
+              <div class="col-span-2 mt-4 md:mt-0">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We can also
+                      source for you any aircraft which is not listed here</h2>
+                  <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">If interested, Please feel
+                      free to complete our Enquiry Form on our <span><a class="text-blue-600"
+                              href="Page06_Contact_Us.html">Contact Us</a></span> page. </p>
+                  <a href="#"
+                      class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                      Get started
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+
+                  </a>
+              </div>
+              <img src="./src/imAGE/Pics for actonjets.com 14.jpg" alt="">
+          </div>
+      </section>
+
+      <section class="bg-white dark:bg-gray-900">
+          <h2 class="text-center mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Air Cargo
+              Freight Services – Cargo charter
+          </h2>
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="col-span-1 font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <p class="mb-4">Your air cargo is time critical, out of gauge or needs to be delivered to an unusual
+                      destination. Let us take care of it with end-to-end air freight services. Our global network of
+                      trusted freight forwarding partners ensures delivery of your air freight shipments to any place
+                      in the world.
+                  </p>
+                  <p class="mb-4">We have the knowledge, expertise, systems and partner network to provide a full
+                      range of fast and efﬁcient air freight services to and from all major destinations around the
+                      world. What’s more we guarantee that all of your shipments will reach their destination by the
+                      quickest, most reliable and cost-effective means.
+                  </p>
+                  <p class="mb-4">We work closely with all major airlines around the world. Ongoing negotiations
+                      ensure that we always have the cargo space that you need.
+                  </p>
+                  <p class="mb-4">Acton Jets can source a range of aircraft to move heavy and outsize cargo. We offer
+                      a wide range of charter solutions for the transportation of heavy and outsize items that can’t
+                      be loaded onto scheduled services, such as oil industry equipment, aircraft engines, stage sets
+                      and vehicles.
+                  </p>
+              </div>
+              <div class="col-span-1">
+                  <img class="my-6 p-12 w-full rounded-lg scale-up-center plane-img"
+                      src="./src/imAGE/Pics for actonjets.com 22.jpg" alt="office content 1">
+              </div>
+          </div>
+      </section>
+
+      <section class="bg-white dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="col-span-1">
+                  <img class="my-6 p-12 w-full rounded-lg scale-up-center plane-img"
+                      src="src/charterimg/charterimg6.jpg" alt="office content 1">
+              </div>
+              <div class="col-span-1 font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <p class="mb-4">Acton Jets is able to source the best available aircraft to fly into hard-to-reach
+                      destinations that scheduled services can’t access, such as: <br><br>
+                      • Natural Disaster Zones: Delivering humanitarian aid and transport vital equipment. <br><br>
+                      • Hostile Locations: Transporting military cargo, equipment and food supplies to volatile areas
+                      of political instability or unrest. <br><br>
+                      • Underserviced Airports: Landing on unpaved or short runways and grass strips in areas with
+                      limited local infrastructure. <br><br>
+                      • Moving perishables, high value commodities, heavy and outsized cargo and live animals. <br>
+                  </p>
+              </div>
+          </div>
+      </section>
+
+      <section class="bg-white dark:bg-gray-900">
+          <h2 class="text-center mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Ambulance
+              Flight Rental
+          </h2>
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="col-span-1 font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <p class="mb-4">We do Air Ambulance chartering with licensed partners.
+                  </p>
+                  <p class="mb-4">We work with a professional and on the matter experienced team who is aware of the
+                      sensitive case of the passenger on board.
+                  </p>
+                  <p class="mb-4">Taking the patient's condition into account we work for a smooth and on-time flight
+                      to transfer the patient safely without any interruption.
+                  </p>
+                  <p class="mb-4">Doctor care and ambulance services on the ground between the airport and hospital
+                      can be arranged upon request through our licensed partners and all requested arrangements will
+                      be handled out of the aircraft.
+                  </p>
+                  <p class="mb-4">Acton Jets has access to a large range of aircraft suitable for medical evacuations
+                      and transportation and are capable of carrying patients and relatives alongside specialist
+                      medical personnel.
+                  </p>
+                  <p class="mb-4">The jets, turboprops and helicopters used are always purposely equipped to transport
+                      the sick and injured.
+                  </p>
+                  <p class="mb-4 font-bold">To get a quotation for your Charter Flight, Please feel free to complete our Enquiry Form on our <span class="text-blue-600"><a href="Page06_Contact_Us.html"> Contact Us</a></span> Page. 
+                  </p>
+              </div>
+              <div class="col-span-1">
+                  <img class="my-6 p-12 w-full rounded-lg scale-up-center plane-img"
+                      src="src/charterimg/charterimg9.jpg" alt="office content 1">
+              </div>
+          </div>
+      </section>
+      <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="src/LOGO of Acton Jets PNG.png" class="mr-3 h-8" alt="Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Acton Jets</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 gap-16 sm:gap-8 sm:grid-cols-1">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="" class="hover:underline ">Acton Jets</a>
+                            </li>
+                            <li>
+                                <a href="./Page06_Contact_Us.html" class="hover:underline">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2017 <a href="http://actonjets.com" class="hover:underline">Acton Jets™</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <a href="https://www.facebook.com/profile.php?id=100044632586096  " target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://instagram.com/actonjets?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

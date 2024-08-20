@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aircrafts Sale | Acton Jets </title>
+  <link rel="shortcut icon" href="./src/LOGO of Acton Jets PNG.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <style>
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hero-content {
+    background: url('./src/airplane-cover-pge2.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+    opacity: 0.8;
+    height: 100vh;
+}
+.hero{
+  background: #222222;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+/* 3 */
+.btn-3 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(75, 75, 250, 0.3);
+      border-radius: 3px;
+    }
+
+    .center h1 {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+
+    }
+
+    .aboutCont {
+      display: flex;
+      justify-content: space-around;
+      margin: 0px auto;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 3em auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .lastpoint {
+      margin: 2px 100px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .plane-img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 4em auto;
+      margin-right: 80px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .plane-img:hover {
+      transform: scale(1.1);
+    }
+
+    .plane-img1 {
+      width: 100%;
+      max-width: 400px;
+      height: 35vh;
+      display: block;
+      margin: 5em auto;
+      margin-left: 100px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .plane-img1:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 400px) {
+      .plane-img {
+        max-width: 100%;
+      }
+
+      .aboutCont {
+        display: block;
+      }
+
+      .plane-img1 {
+        max-width: 100%;
+        margin-left: 0px;
+      }
+
+      .lastpoint {
+        margin: 2px 10px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .plane-img {
+        max-width: 100%;
+      }
+
+      .aboutCont {
+        display: block;
+      }
+
+      .plane-img1 {
+        max-width: 100%;
+        margin-left: 0px;
+      }
+
+      .lastpoint {
+        margin: 2px 10px;
+      }
+    }
+    * { box-sizing: border-box; }
+
+    ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+  
+    /* new */
+    @keyframes airplane {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, 100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes topRightCloud {
+  0% { 
+    opacity: 0;
+    transform: translate(10px, -10px) scale(0.5); 
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes topLeftCloud {
+  from { 
+    opacity: 0;
+    transform: translate(-10px, -10px);   
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes bottomRightCloud {
+  from { 
+    opacity: 0;
+    transform: translate(-100px, -10px); 
+  }
+  to {
+    opacity: 1; 
+    transform: none;
+  }
+}
+
+@keyframes bottomLeftCloud {
+  from { 
+    opacity: 0;
+    transform: translate(0px, 100px);
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+@keyframes checkmark {
+  0% { 
+    opacity: 0;
+    transform: translate(144px, 200px);
+  }
+  80% {
+    opacity: 0.8;
+    transform: translate(144px, 140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(144px, 147px);
+  }
+}
+
+#airplane {
+  animation: 1s cubic-bezier(0.5,0,0,1) backwards airplane;
+}
+
+#cloud-top-right {
+  animation: .7s ease-out .2s backwards topRightCloud;
+}
+
+#cloud-top-left {
+  animation: .7s ease-out .5s backwards topLeftCloud;
+}
+
+#cloud-bottom-left {
+  animation: .7s ease-out .2s backwards bottomLeftCloud;
+}
+
+#cloud-bottom-right {
+  animation: .7s ease-out .3s backwards bottomRightCloud; 
+}
+
+#checkmark {
+  animation: .3s ease-out .7s  backwards checkmark; 
+}
+    /* new */
+  
+/* animation */
+/* ----------------------------------------------
+ * Generated by Animista on 2023-11-28 10:23:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* animation */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-11-28 10:32:2
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.plane-img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 4em auto;
+            margin-right: 80px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .plane-img:hover {
+            transform: scale(1.1);
+        }
+
+  </style>
+
+  <!-- Navbar -->
+
+
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="http://actonjets.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="/src/LOGO of Acton Jets PNG.png" class="h-8" alt="Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Acton Jets</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html"
+              class="block py-2 px-3  bg-blue-700 rounded text-gray-900 md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-200"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="Page01_About Us_Acton_Jets.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="./Page02_Aircrafts Sale _ Lease.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aircrafts
+              Sale</a>
+          </li>
+          <li>
+            <a href="./Page03_Charter_Services.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Charter
+              Services</a>
+          </li>
+          <li>
+            <a href="./Page04_Aircraft_Management.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aircraft
+              Management</a>
+          </li>
+          <li>
+            <a href="./Page05_Aviation_Insurance.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Aviation
+              Insurance</a>
+          </li>
+          <li>
+            <a href="./Page06_Contact_Us.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+
+  <section class="hero">
+    <div class="hero-content">
+        <h1>Sale and Lease of Aircrafts </h1>
+        <p class="text-center text-white">Acton Jets has access
+          to a wide range of pre-owned Luxury Private Jets, helicopters or commercial aircrafts available for Lease and or
+          sale</p>
+
+        <div class="flex frame items-center justify-center">
+          <a href="./Page06_Contact_Us.html"><button class="custom-btn btn-3"><span >Contact Us</span></button></a>
+      </div>
+    </div>
+</section> 
+
+  <section class="bg-white dark:bg-gray-900 p-8">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 border-2">
+      <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+        <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our services for business
+          aircraft also apply to commercial aircraft.</h2>
+        <p class="mb-4 font-light">Our inventory list is made of a number of off-market aircrafts for sale or lease at
+          very attractive rates and terms. Our Inventory list includes also aircrafts pre-owned by governments.</p>
+        <p class="mb-4 font-medium">Let our dedicated international sales team be your partner in commercial aircraft
+          sales and leasing opportunities!</p>
+      </div>
+    </div>
+
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Dedicated aircraft leasing division</h2>
+          <p class="mb-4">Acton Jets’s dedicated aircraft leasing division provides wet, damp (ACMI), dry and hybrid
+            lease contracts to airlines around the world. Whether it’s a last-minute sub-charter or additional aircraft
+            to fulfill a busy summer flight schedule, our flexible solutions allow operators to meet seasonal and
+            unexpected demand with dedicated aircraft.</p>
+          <p class="mb-4">Our expert team can handle every aspect of your lease, from negotiating agreements to managing
+            the operation and lease throughout its contract period and post lease reconciliations.</p>
+          <p>We can also use our in-house travel, private jet and cargo teams to arrange crew accommodation and
+            transport spare parts and crews wherever they’re needed.</p>
+        </div>
+        <img class="h-80 plane-img max-w-lg rounded-lg marketing-ui content office-long-2.png scale-up-center"
+        src="src/aircraftsale.png"
+        alt="Aircraft for sale and lease">
+  </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class=" mt-8">
+          <img class="w-full rounded-lg scale-up-center plane-img"
+            src="src/plane.png"
+            alt="office content 1"
+            class="plane-img">
+        </div>
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Inventory List of aircrafts available for sale and or lease</h2>
+          <ul class="slide-in-bottom ">
+            <li>Gulfstream 650</li>
+            <li>Challenger C605</li>
+            <li>Falcon 7X</li>
+            <li>Citation Sovereign</li>
+            <li>Citation CJ3</li>
+            <li>Citation CJ4</li>
+            <li>Falcon 900 EX</li>
+            <li>Falcon 2000LX</li>
+            <li>Embraer Legacy 600</li>
+            <li>Citation XLS</li>
+            <li>Learjet 45, Citation Excel</li>
+            <li>Airbus 330</li>
+            <li>Airbus 320</li>
+            <li>Boeing 737-400</li>
+            <li>Boeing 747-400Freighter</li>
+            <li>Boeing 737-800BCF</li>
+            <li>Boeing 767-300ER</li>
+            <li>Boeing 777-200</li>
+            <li>Boeing 777-300ER</li>
+      </ul>
+      </div>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-3 sm:py-16 lg:px-6">
+        <div class="col-span-2 mt-4 md:mt-0">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We can also source for you any aircraft which is not listed here</h2>
+          <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">If interested, Please feel free to complete our Enquiry Form on our <span><a class="text-blue-600" href="Page06_Contact_Us.html">Contact Us</a></span> page. </p>
+          <a href="#" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+              Get started
+              <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </a>
+      </div>
+      <img src="./src/insurance1.png" alt="">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="424" height="364"
+        viewBox="0 0 424 364" style="background:#FFFFFF"><title>Illustrasjon</title>
+       <defs>
+           <circle id="a" cx="50" cy="50" r="50"/>
+       </defs>
+       <g fill="none" fill-rule="evenodd">
+         <g id="airplane">
+           <path d="M152 146.3l-4.4.5c-8.6.7-17.3-1-24.8-5.4l-.8-.4-6 2.3 14.2 16.7 21.8-13.7z" fill="#66BBE4"/>
+           <path d="M116.7 143.6l13.6 15.8 20.3-12.6-3.2.3c-1.3.2-2.6.3-4 .3-7 0-14.2-2-20.5-5.4l-.8-.4-5.5 2zm13.5 16.4h-.2l-14-16.3v-.3h.2l6-2.4 1 .5c6 3.4 13.2 5.3 20.3 5.3 1.3 0 2.6 0 3.8-.2l4.4-.4s.2 0 .3.2v.3L130.3 160h-.2z"
+                 fill="#66BBE4"/>
+           <path d="M147 148l73-27.6c4.5-1.8 9.6-1.8 14.3-.2.4 0 .8.3 1.2.4l2.6 1 5.5.8c2.4.4 3.3 3.2 1.7 5l-.8.7c-3 3-6.5 5.4-10.4 7L172.2 158c-6.6 2.5-13.4 4-20.4 4l-25.7.8-1-2.7 22-12.4z"
+                 fill="#CCE8F6"/>
+           <path d="M125.6 161l1 2.5 25.3-.8c6.8-.2 13.6-1.5 20-4l61.7-23.6c3.8-1.4 7.4-3.8 10.2-6.7l.7-.8c.7-.8 1-1.8.6-2.7-.3-1-1-1.7-2-1.8l-5.5-.7-2.6-1-1.2-.6c-2.2-.8-4.5-1.2-6.8-1.2-2.5 0-5 .5-7.4 1.4l-72.4 27.7-21.8 12.4zm.7 3s-.2 0-.2-.2l-1-2.8v-.3l22.2-12.5 72.4-27.8c2.5-1 5-1.4 7.6-1.4 2.4 0 4.7.4 7 1.2.4 0 .8.3 1.2.5l2.5 1 5.3.8c1.2 0 2 1 2.5 2 .4 1.2 0 2.5-.7 3.3l-.7.8c-3 3-6.5 5.5-10.4 7l-61.7 23.6c-6.5 2.5-13.4 4-20.4 4l-25.7.8z"
+                 fill="#CCE8F6"/>
+           <path d="M237 121.7l-7.7 3.2c-.4 0-.8 0-1.2-.3l-.6-.5c-.6-.5-.5-1.5.2-1.8l5.7-2.4 1.2.5 2.5 1.2z"
+                 fill="#33A4DB"/>
+           <path d="M234 120.5l-6 2.2c-.3 0-.4.3-.4.5s0 .5.2.6l.8.5c.3.2.7.2 1 0l7.4-2.6-2-.7-1-.5M229 125c-.3 0-.7 0-1-.3l-.7-.5c-.4-.2-.5-.6-.5-1 0-.5.4-.8.8-1l6-2.2h.2l1.3.5 2.5 1 .2.3s0 .2-.2.2l-8 3h-.6M216.5 130c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M216.3 127.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5 0 0 .3-.2.3-.4v-.3l-.3-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8v.8c-.3.3-.5.5-1 .6h-.3M212.5 132c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M212.3 128.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M208.5 133c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M208.3 130.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M204.5 135c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M204.3 132.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M200.5 136c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M200.3 133.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5 0 0 .3-.2.3-.4v-.3l-.3-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8v.8c-.3.3-.5.5-1 .6h-.3M196.5 138c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M196.3 135.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5 0 0 .3-.2.3-.4v-.3l-.3-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8v.8c-.3.3-.5.5-1 .6h-.3M192.5 140c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M191.3 136.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5 0 0 .3-.2.3-.4v-.3l-.3-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8v.8c-.3.3-.5.5-1 .6h-.3M188.5 141c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M187.3 138.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M183.5 143c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M183.3 139.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M179.5 144c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M179.3 141.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M175.5 146c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M175.3 143.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5 0 0 .3-.2.3-.4v-.3l-.3-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8v.8c-.3.3-.5.5-1 .6h-.3M171.5 147c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M171.3 144.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5 0 0 .3-.2.3-.4v-.3l-.3-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8v.8c-.3.3-.5.5-1 .6h-.3M167.5 149c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M167.3 146.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M163.5 151c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M163.3 147.5h-.2c-.3.2-.5.5-.4.8l.4.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8c-.2-.6.2-1.2 1-1.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3M159.5 152c-.5 0-1 0-1-.7l-.4-1c0-.4 0-1 .5-1.2.5 0 1 0 1 .7l.4 1c0 .4 0 1-.5 1.2"
+                 fill="#33A4DB"/>
+           <path d="M158.3 149.5h-.2s-.3.2-.3.4v.3l.3.8c0 .4.6.6 1 .5.3-.2.5-.5.4-.8l-.4-.8c0-.4-.4-.5-.7-.5m.4 2.5c-.6 0-1-.3-1.3-.7l-.3-.8v-1c.3 0 .5-.3 1-.4.5 0 1.3.2 1.6.7l.3.8c.2.6-.2 1.2-1 1.4h-.3"
+                 fill="#33A4DB"/>
+           <path d="M202.7 150s-2.3-6.6-7.7-4.4l.7-1.7 11.8-3s.3 2 2.5 1l-3.6 7.7-3.7.3z" fill="#66BBE4"/>
+           <path d="M197.5 145c3.7 0 5.5 3.6 5.8 4.5l3.6-.3 3.2-6.5h-.6c-1 0-1.5-.6-1.6-1l-11.8 2.6-.4.8h1.7m5.7 5s-.2 0-.3-.2c0 0-1.8-4.4-5.5-4.4-.7 0-1.4.2-2 .4h-.4v-.3l.8-1.6s0-.2.2-.2l12-2.8h.3v.2s.3 1 1.3 1c.3 0 .7 0 1-.2h.3v.4l-3.7 7.2h-.3l-3.8.4"
+                 fill="#66BBE4"/>
+           <path d="M215 138.6l-26.4 9c-2 .8-4.3.3-6-1.2L180 144l3.4-1.3 8 2 22.8-8.6c.7-.2 1.5.2 1.7.8.2.7-.2 1.5-1 1.8"
+                 fill="#99D2ED"/>
+           <path d="M179.8 144.6l2.3 2.3c1.2 1 2.6 1.4 4 1.4.7 0 1.3 0 2-.3l26.7-9.3c.3 0 .5-.3.7-.6v-.7c-.2-.6-.8-1-1.4-.7l-23 9h-.2l-8-2-3 1zm6.2 4.4c-1.5 0-3-.6-4.2-1.7l-2.7-2.6v-.2s0-.2.2-.2l3.4-1.4h.2l8 2 23-9h.6c.7 0 1.3.4 1.5 1 0 .5 0 1-.2 1.3 0 .5-.5.8-1 1l-26.7 9.4c-.6.2-1.3.3-2 .3zM209 151.7l10-3.7-3-8-10.2 3.8c-2.2.8-3.4 3.3-2.5 5.5.8 2.2 3.3 3.3 5.6 2.4"
+                 fill="#99D2ED"/>
+           <path d="M215.4 140.6l-10 3.8c-2.3.8-3.4 3.2-2.6 5.4.6 1.6 2.2 2.7 4 2.7.5 0 1 0 1.4-.3l10.2-3.8-3-7.8zm-8.7 12.4c-2 0-3.7-1.2-4.4-3-1-2.4.3-5.2 2.8-6l10.5-4h.2v.2l3.3 8.2c0 .2 0 .3-.2.4l-10.4 4-1.7.2z"
+                 fill="#99D2ED"/>
+           <path d="M114.5 194.5l62-25M64.5 196.5l62-25M50.5 180.5l62-25" stroke="#CCE8F6" stroke-linecap="round"/></g>
+           <path id="cloud-bottom-right" d="M227 214c-2 0-3.6-.7-5-2-4.7-4.6-6.6-9.5-5.8-16 .8-7.6 6.7-13.7 15-16.5 8.5-2.7 19-.4 24.3 5.8-1.3-13.3 13.6-26 29.6-25.3 16 .8 29 15 26 28 .3-1.5 2-2.6 3.8-3.3 8.2-3.3 19-1.3 24.7 4.6 4.6 4.7 5.7 13.8 3 20.3-1 2.7-3.5 4.4-6.4 4.4H227z"
+                 fill-opacity=".5" fill="#CCE8F6"/>
+           <path id="cloud-top-right" d="M152 105c-1.2 0-2.3-.4-3-1.2-3.2-3-4.4-6-4-10.2.7-4.7 4.4-8.6 9.7-10.3 5.3-1.7 12-.3 15.3 3.6-.8-8.5 8.6-16.5 18.7-16 10 .5 18.3 9.4 16.3 17.7.3-1 1.4-1.7 2.5-2 5.2-2.2 12-1 15.7 2.7 3 3 3.6 8.7 2 13-.7 1.5-2.4 2.6-4.2 2.6h-69z"
+                 fill="#E5F3FA"/>
+           <path id="cloud-top-left" d="M138.5 116c-.7 0-1.4-.3-2-.8-2-2-2.7-4-2.4-6.6.4-3 3-5.5 6.3-6.6 3.5-1 8-.2 10 2.3-.5-5.4 5.7-10.6 12.3-10.3 6.6.3 12 6 10.7 11.4.2-.6 1-1 1.6-1.3 3.3-1.3 7.8-.5 10 2 2 1.8 2.5 5.5 1.4 8.2-.4 1-1.5 1.8-2.7 1.8h-45.2z"
+                 fill="#CCE8F6"/>
+           <g id="checkmark" transform="translate(144 147)">
+               <mask id="b" fill="#fff">
+                   <use xlink:href="#a"/>
+               </mask>
+               <use fill="#FFF" xlink:href="#a"/>
+               <path fill="#008A00" mask="url(#b)" d="M0 0h100v100H0z"/>
+               <path d="M65 30L44 66 34 51.6c-.3-.5-.8-.7-1.3-.7H31c-1.4 0-2 1.4-1.4 2.4l12 16.8C43 72 46 72 47 70l22-38.3c.7-1 0-2.4-1.3-2.4h-1.5c-.5 0-1 .3-1.3.8"
+                     stroke="#FFF" fill="#FFF" mask="url(#b)"/>
+           </g>
+           <path id="cloud-bottom-left" d="M213 229c-1.2 0-2.3-.4-3-1.2-3.2-3-4.4-6-4-10.2.7-4.7 4.4-8.6 9.7-10.3 5.3-1.7 12-.3 15.3 3.6-.8-8.5 8.6-16.5 18.7-16 10 .5 18.3 9.4 16.3 17.7.3-1 1.4-1.7 2.5-2 5.2-2.2 12-1 15.7 2.7 3 3 3.6 8.7 2 13-.7 1.5-2.4 2.6-4.2 2.6h-69z"
+                 fill="#CCE8F6"/>
+       </g>
+        </svg> -->
+      </div>
+  </section>
+
+  <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="index.html" class="flex items-center">
+                    <img src="src/LOGO of Acton Jets PNG.png" class="mr-3 h-8" alt="Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Acton Jets</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 gap-16 sm:gap-8 sm:grid-cols-1">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="" class="hover:underline ">Acton Jets</a>
+                        </li>
+                        <li>
+                            <a href="./Page06_Contact_Us.html" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2017 <a href="http://actonjets.com" class="hover:underline">Acton Jets™</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="https://www.facebook.com/profile.php?id=100044632586096  " target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://instagram.com/actonjets?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
